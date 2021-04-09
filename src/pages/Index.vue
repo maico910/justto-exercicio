@@ -1,21 +1,27 @@
 <template>
   <q-page class="flex flex-center bg-grey-13">
     <TableUser :loading="loading.users" :users="users" @sync-user="syncUsers" @add-user="showDialog.addUser = true" @edit-user="(user) => currentUser = user" />
+    
+    <DialogAddUser v-if="showDialog.addUser" @hide="showDialog.addUser = false" />
   </q-page>
 </template>
 
 <script>
 import TableUser from 'src/components/User/TableUser.vue'
 import { mapGetters } from 'vuex';
+import DialogAddUser from 'src/components/User/DialogAddUser.vue';
 export default {
   name: 'PageIndex',
-  components: { TableUser },
+  components: { TableUser, DialogAddUser },
 
   data() {
     return {
       loading: {
         users: false
       },
+      },
+      showDialog: {
+        addUser: false,
       currentUser: null
     }
   },
