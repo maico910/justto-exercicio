@@ -1,2 +1,3 @@
-export function someMutation (/* state */) {
+export function SET_USERS (state, val) {
+  state.users = val
 }
