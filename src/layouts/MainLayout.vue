@@ -3,9 +3,8 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          Quasar App
+          Justto Exercício
         </q-toolbar-title>
-
       </q-toolbar>
     </q-header>
 

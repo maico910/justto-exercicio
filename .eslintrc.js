@@ -64,5 +64,8 @@ module.exports = {
     'vue/no-unused-vars': 'warn',
     'vue/attribute-hyphenation': 'off',
     'vue/no-unused-components': 'warn',
+    "vue/html-self-closing": ["error"],
+    "vue/max-attributes-per-line": 'off',
+    'vue/require-default-prop': 'off'
   }
 }
