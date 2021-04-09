@@ -3,6 +3,9 @@
     <TableUser :loading="loading.users" :users="users" @sync-user="syncUsers" @add-user="showDialog.addUser = true" @edit-user="(user) => currentUser = user" />
     
     <DialogAddUser v-if="showDialog.addUser" @hide="showDialog.addUser = false" />
+
+    <DialogEdituser v-if="!!currentUser" :userId="currentUser" @hide="currentUser = null" />
+
   </q-page>
 </template>
 
@@ -10,18 +13,21 @@
 import TableUser from 'src/components/User/TableUser.vue'
 import { mapGetters } from 'vuex';
 import DialogAddUser from 'src/components/User/DialogAddUser.vue';
+import DialogEdituser from 'src/components/User/DialogEdituser.vue';
+
 export default {
   name: 'PageIndex',
-  components: { TableUser, DialogAddUser },
+  components: { TableUser, DialogAddUser, DialogEdituser },
 
   data() {
     return {
       loading: {
         users: false
       },
-      },
       showDialog: {
         addUser: false,
+        editUser: false
+      },
       currentUser: null
     }
   },
