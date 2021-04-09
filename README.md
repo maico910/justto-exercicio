@@ -1,26 +1,15 @@
 # Justto Exercicio (justto-exercicio)
 
-Justto Entrevista Exercicio
+## Exercício de Entrevista
+Criar CRUD de usuários com seguintes dados:
+- Nome
+- Sexo
+- Data de nascimento
+- CPF
 
-## Install the dependencies
-```bash
-npm install
-```
+## Tecnologias Utilizadas
+- [mockAPI](https://www.mockapi.io/)
+- [Quasar](https://quasar.dev/)
+- [Firebase](https://firebase.google.com/)
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-### Lint the files
-```bash
-npm run lint
-```
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).
+## [Ir para aplicação](https://justto-exercicio.web.app/#/)
