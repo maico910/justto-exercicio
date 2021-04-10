@@ -40,9 +40,8 @@ export default {
         { name: 'id', field: 'id', label: 'Id'},
         { name: 'name', field: 'name', label: 'Nome', },
         { name: 'gender', field: 'gender', label: 'Sexo', },
-        { name: 'birth', field: 'birth', label: 'Data Nasc.'},
-        { name: 'cpf', field: 'cpf', label: 'CPF', },
-        { name: 'action', field: '', label: 'Ação', }
+        { name: 'birth', field: 'birth', label: 'Data de Nascimento'},
+        { name: 'cpf', field: 'cpf', label: 'CPF', format: (cpf) => cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")}
       ]
     }
   },
