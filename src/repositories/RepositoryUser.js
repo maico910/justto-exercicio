@@ -1,4 +1,4 @@
-import userApi from '../../../justto_old/src/components/Api/Users'
+import userApi from '../components/Api/Users'
 
 export default {
   getAllUsers () {
